@@ -1,26 +1,25 @@
 # redStar
 
-redStar is php backdoor generator and management project.
+redStar is php backdoor generator and management project. 
+redStar generated for penetration tests, you can manage all pwned hosts.
 
 redStar supports autocomplete with [TAB]
 
 ## Setup
-- pip3 install -r requirements
+- pip3 install -r requirements.txt
 
 ## Running
 - python3 main.py
 
 ## Usage
-1. Create endpoint
-2. upload endpoint to web server
-3. add client to redStar
-4. have fun
-
 
 ### Create PHP Endpoint File 
 createEndpoint 123456 1  => Creates php file in "endpoints" folder
+
 createEndpoint 123456 0  => Creates php file in given path
+
 **OR**
+
 createEndpoint           => Create php file interactive
 
 
@@ -52,4 +51,4 @@ sessions 31EAF990D1AB delete
 banner
 
 
-*For Educational Porpuse
+*For Educational Porpuse*
