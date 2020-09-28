@@ -1,5 +1,15 @@
 # redStar
-
+```
+		.
+    ~           ,O,
+     ´         ,OOO,			,
+      .  'oooooOOOOOooooo'
+       .   `OOOOOOOOOOO`
+        '    `OOOOOOO`	`	-
+ `           OOOO'OOOO
+  .         OOO'   'OOO 	.	,
+    `      O'         'O
+```
 redStar is php backdoor generator and management project. 
 redStar generated for penetration tests, you can manage all pwned hosts.
 
