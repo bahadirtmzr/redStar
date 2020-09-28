@@ -6,7 +6,6 @@ import os
 import requests
 from colorama import Fore, Style
 import uuid
-import uuid
 import sqlite3
 from prettytable import PrettyTable
 
@@ -91,6 +90,10 @@ class interactiveMenu(cmd.Cmd):
 		cur = conn.cursor()
 		sql = 'SELECT session_id,url,key FROM sessions'
 		allSess = cur.execute(sql).fetchall()
+		if(len(allSess)==0):
+			print(f"{Fore.RED}[-] Session not found{Style.RESET_ALL}")
+			return False
+
 		cur.close()
  
 		t = PrettyTable(['URL', 'STATUS'])

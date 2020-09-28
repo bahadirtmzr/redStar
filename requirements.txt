@@ -1,0 +1,6 @@
+prettytable
+argparse
+requests
+colorama
+uuid
+Crypto
