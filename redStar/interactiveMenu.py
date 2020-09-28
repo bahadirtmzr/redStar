@@ -136,7 +136,7 @@ class interactiveMenu(cmd.Cmd):
 		cShellEncryptedAndB64Encoded = shellCreator.customShell(key)
 		f = open(path,"w")
 		f.write(cShellEncryptedAndB64Encoded)
-		print("{Fore.GREEN}[+] Shell Created at " + path+f"{Style.RESET_ALL}")
+		print(f"{Fore.GREEN}[+] Shell Created at " + path+f"{Style.RESET_ALL}")
 		 
 		 
 
