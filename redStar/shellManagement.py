@@ -96,7 +96,7 @@ class shellManagement:
 		t = time.localtime()
 		current_time = time.strftime("%H:%M:%S %d-%m-%Y", t)
 
-		sql = '''INSERT INTO sessions(session_id,url,key,last_seen)  VALUES( ?, ?, ?, ?)'''
+		sql = '''INSERT INTO sessions(session_id,url,key,created_time)  VALUES( ?, ?, ?, ?)'''
 		
 		data = (str(id),str(url),str(key),current_time)
 		cur.execute(sql, data)
